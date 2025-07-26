@@ -20,21 +20,20 @@ Facial classification systems often exhibit **biases** against underrepresented 
 ├── data/
 
     └── fairface_label_subset.csv # Preprocessed subset of FairFace labels
-
     ├── fairface_label_train.csv # Original label CSV
     ├── fairface_label_val.csv # Original label CSV
 
 ├── datasets/
 
-  └── fairface_dataset.py # PyTorch dataset class
+    └── fairface_dataset.py # PyTorch dataset class
 
 ├── models/
 
-  └── multitask_model.py # Multi-task ResNet-18 model
+    └── multitask_model.py # Multi-task ResNet-18 model
 
 ├── checkpoints/
 
-  └── multitask_model.pth # Trained model weights (not uploaded)
+    └── multitask_model.pth # Trained model weights (not uploaded)
 
 ├── fairface-imgs/ # Image folder (not uploaded)
 
