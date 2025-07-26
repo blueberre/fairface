@@ -1,6 +1,6 @@
 # FairFace: Fairness-Aware Gender and Race Classification using Multi-Task Learning
 
-This project trains a **multi-task deep learning model** to predict **gender** and **race** from facial images using the [FairFace](https://arxiv.org/abs/2012.00361) dataset. It also evaluates the **fairness** of gender classification across racial subgroups by computing metrics like **False Positive Rate (FPR)** and **False Negative Rate (FNR)** per race.
+This project trains a **multi-task deep learning model** to predict **gender** and **race** from facial images using the [FairFace](https://arxiv.org/abs/1908.04913) dataset. It also evaluates the **fairness** of gender classification across racial subgroups by computing metrics like **False Positive Rate (FPR)** and **False Negative Rate (FNR)** per race.
 
 ---
 
@@ -18,20 +18,35 @@ Facial classification systems often exhibit **biases** against underrepresented 
 ## 🗂️ Project Structure
 
 ├── data/
+
   └── fairface_label_subset.csv # Preprocessed subset of FairFace labels
+
   ├── fairface_label_train.csv # Original label CSV
+  
   ├── fairface_label_val.csv # Original label CSV
+
 ├── datasets/
+
   └── fairface_dataset.py # PyTorch dataset class
+
 ├── models/
+
   └── multitask_model.py # Multi-task ResNet-18 model
+
 ├── checkpoints/
+
   └── multitask_model.pth # Trained model weights (not uploaded)
+
 ├── fairface-imgs/ # Image folder (not uploaded)
+
 ├── preprocess.py # Label preprocessing and encoding
+
 ├── train.py # Training loop
+
 ├── evaluate.py # Group fairness evaluation
+
 ├── requirements.txt
+
 └── README.md
 
 
@@ -99,5 +114,5 @@ Disparities in FPR/FNR across racial groups indicate potential biases. For examp
 
 - **FairFace Dataset**  
   > Karkkainen, K., & Joo, J. (2021). *FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age*. CVPR Workshop on Fairness in AI.  
-  > [https://arxiv.org/abs/2012.00361](https://arxiv.org/abs/2012.00361)
+  > [https://arxiv.org/abs/1908.04913](https://arxiv.org/abs/1908.04913)
 
