@@ -19,11 +19,10 @@ Facial classification systems often exhibit **biases** against underrepresented 
 
 ├── data/
 
-  └── fairface_label_subset.csv # Preprocessed subset of FairFace labels
+    └── fairface_label_subset.csv # Preprocessed subset of FairFace labels
 
-  ├── fairface_label_train.csv # Original label CSV
-  
-  ├── fairface_label_val.csv # Original label CSV
+    ├── fairface_label_train.csv # Original label CSV
+    ├── fairface_label_val.csv # Original label CSV
 
 ├── datasets/
 
